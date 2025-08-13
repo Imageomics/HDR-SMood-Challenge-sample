@@ -102,7 +102,7 @@ def main():
     # evaluate model
     test_and_save(
         test_dset,
-        save_dir / "resutls.json",
+        save_dir / "results.json",
         args.batch_size,
         args.num_workers,
         model,
