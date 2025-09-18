@@ -1,6 +1,6 @@
 # Imageomics HDR Scientific Mood Challenge Sample
 
-This repository contains sample training code and submissions for the [2025 HDR Scientific Mood (Modeling out of distribution) Challenge: Beetles as Sentinel Taxa](CODABENCH LINK COMING). It is designed to give participants a reference for both working on the challenge, and also the expected publication of their submissions following the challenge (i.e., how to open-source your submission).
+This repository contains sample training code and submissions for the [2025 HDR Scientific Mood (Modeling out of distribution) Challenge: Beetles as Sentinel Taxa](https://www.codabench.org/competitions/9854/). It is designed to give participants a reference for both working on the challenge, and also the expected publication of their submissions following the challenge (i.e., how to open-source your submission).
 
 ## Repository Structure
 
@@ -61,6 +61,8 @@ with `uv` do:
 ```
 uv run python baselines/training/train.py
 ```
+
+The training data is available on the Imageomics Hugging Face: [Sentinel Beetles Dataset](https://huggingface.co/datasets/imageomics/sentinel-beetles). 
 
 ### Evaluation
 Aftering training, you can locally evaluate your model by running the following:
