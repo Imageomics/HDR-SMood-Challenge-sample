@@ -62,6 +62,8 @@ with `uv` do:
 uv run python baselines/training/train.py
 ```
 
+The training data is available on the Imageomics Hugging Face: [Sentinel Beetles Dataset](https://huggingface.co/datasets/imageomics/sentinel-beetles). 
+
 ### Evaluation
 Aftering training, you can locally evaluate your model by running the following:
 ```
