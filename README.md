@@ -6,47 +6,54 @@ This repository contains sample training code and submissions for the [2025 HDR 
 
 For your repository, you will want to complete the structure information below and add other files (e.g., training code):
 ```
-submission
+submission/
   <model weights>
   model.py
   requirements.txt
 ```
 We also recommend that you include a [CITATION.cff](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files) for your work.
 
-**Note:** If you have requirements not included in the [whitelist](https://github.com/Imageomics/HDR-SMood-challenge/blob/main/ingestion_program/whitelist.txt), please check the [issues](https://github.com/Imageomics/HDR-SMood-challenge/issues) on the challenge GitHub to see if someone else has requested it before making your own issue.
+**Note:** If you have requirements not included in the [whitelist](https://github.com/Imageomics/HDR-SMood-challenge/blob/main/ingestion_program/whitelist.txt), please check the [issues](https://github.com/Imageomics/HDR-SMood-challenge/issues) on the [challenge GitHub](https://github.com/Imageomics/HDR-SMood-Challenge) to see if someone else has requested it before making your own issue.
 
 ### Structure of this Repository
 ```
-HDR-SMood-challenge-sample
+HDR-SMood-challenge-sample/
 │
-├── baselines
-│   ├── training
-│   │   └── <MODEL NAME>
-│   │       ├── evaluation.py
+├── baselines/
+│   ├── submissions/
+│   │   └── <MODEL NAME>/
+│   │       ├── model.pth
 │   │       ├── model.py
 │   │       ├── train.py
-│   │       └── utils.py
-│   └── submissions
-│       └── <MODEL NAME>
-│           ├── model.pth
+│   │       └── requirements.txt
+│   └── training/
+│       └── <MODEL NAME>/
+│           ├── evaluation.py
 │           ├── model.py
-│           └── requirements.txt
+│           ├── train.py
+│           └── utils.py
+├── notebooks/
+|   └── train-data-exploration.ipynb
 ├── .gitignore
 ├── LICENSE
 └── README.md
 ```
 
-To-Do: add notebook like last year (in a [`notebooks/` folder](https://github.com/Imageomics/HDR-anomaly-challenge-sample/tree/main/notebook)).
-<!--
-This repository also includes butterfly_sample_notebook.ipynb which loads the metadata for the images and displays a histogram of the hybrid/non-hybrid distribution by subspecies. It then downloads 15% of the data and runs through a simplified sample submission training with that subset (the sample image amount can be adjusted to work within network constraints). To run this notebook, first clone this repository and create a fresh conda environment, then install the requirements file:
+> [!IMPORTANT]  
+> Do not zip the whole folder submission folder when submitting your model to Codabench. ***Only*** select the `model.py` and relevant weight and requirements files to make the tarball.
 
-conda create -n butterfly-sample -c conda-forge pip -y
-conda activate butterfly-sample
+#### Training Data Exploration
+
+This repository also includes `train-data-exploration.ipynb` which loads the training data from Hugging Face to perform various data analytics. Specifically, it looks at distributions of images, species, SPEI values, etc. over the various domains. To run this notebook, first clone this repository and create a fresh conda environment, then install the requirements file:
+
+```console
+conda create -n beetle-sample -c conda-forge pip -y
+conda activate beetle-sample
 pip install -r requirements.txt
 jupyter lab
--->
+```
 
-## Installation & Running
+## Installation & Running (for Training)
 
 ### Installation
 If you have `uv` simply run `uv sync`, otherwise you can use the `requirements.txt` file with either `conda` or `pip`.
