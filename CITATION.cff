@@ -1,0 +1,41 @@
+abstract: "Sample training code and submissions for the Imageomics Institute's 2025 HDR SMood Challenge: Beetles as Sentinel Taxa. It is designed to give participants a reference for both working on the challenge, and also the expected publication of their submissions following the challenge."
+authors:
+- family-names: Carlyn
+  given-names: "David E."
+  orcid: "https://orcid.org/0000-0002-8323-0359"
+  affiliation: "The Ohio State University"
+- family-names: Kilrain
+  given-names: Connor
+  orcid: "https://orcid.org/0009-0003-5357-7233"
+  affiliation: "The Ohio State University"
+- family-names: Campolongo
+  given-names: "Elizabeth G."
+  orcid: "https://orcid.org/0000-0003-0846-2413"
+  affiliation: "The Ohio State University"
+cff-version: 1.2.0
+date-released: "2025-12-11"
+identifiers:
+  - description: "The GitHub release URL of tag v1.0.0."
+    type: url
+    value: "https://github.com/Imageomics/HDR-SMood-Challenge-sample/releases/tag/v1.0.0"
+  - description: "The GitHub URL of the commit tagged with v1.0.0."
+    type: url
+    value: "https://github.com/Imageomics/HDR-SMood-Challenge-sample/tree/<commit-hash>" # update on release
+keywords:
+  - imageomics
+  - HDR
+  - "out of distribution"
+  - "sample code"
+  - "ML challenge"
+  - "beetles"
+  - Carabidae
+  - SPEI
+  - drought
+  - "environmental monitoring"
+license:
+message: "If you find this software helpful in your research, please cite both the software and our dataset."
+repository-code: "https://github.com/Imageomics/HDR-SMood-Challenge-sample"
+title: "Imageomics HDR SMood Challenge Sample"
+version: 1.0.0
+doi: # add once generated
+type: software
